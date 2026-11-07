@@ -1,0 +1,23 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+import Foto from "../Foto.astro";
+const s = site.como_funciona;
+---
+<section class="secao fundo-magenta" id="como-funciona">
+  <div class="conteudo">
+    <Titulo anotacao={s.anotacao} pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <ol class="passos">
+      {s.passos.map((passo, i) => (
+        <li><span class="numero">{i + 1}</span>{passo}</li>
+      ))}
+    </ol>
+    <div class="linha-fotos">
+      <div class="caixa-contorno">
+        <h3 class="subtitulo">{s.em_casa_titulo}</h3>
+        <p class="texto-grande">{s.em_casa_texto}</p>
+      </div>
+      {s.fotos.map((f) => <Foto arquivo={f.arquivo} legenda={f.legenda} />)}
+    </div>
+  </div>
+</section>

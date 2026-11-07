@@ -1,0 +1,34 @@
+---
+import site from "../../conteudo/site.yaml";
+import BotaoWhatsapp from "../BotaoWhatsapp.astro";
+const { topo } = site;
+---
+<header class="cabecalho fundo-creme">
+  <div class="conteudo">
+    <img src="/imagens/marca/logo-ana-livia-calmaria.svg" alt="Ana Lívia Beauty" />
+    <BotaoWhatsapp>Agendar</BotaoWhatsapp>
+  </div>
+</header>
+
+<section class="topo fundo-listras">
+  <div class="painel-ondulado">
+    <div class="topo-texto">
+      <span class="rotulo">{topo.rotulo}</span>
+      <h1 class="titulo-misto">
+        <span class="pesada">{topo.titulo_linha_1}</span>
+        <span class="italico">{topo.titulo_linha_2}</span>
+        <span class="pesada"><span class="circulado">{topo.titulo_linha_3}</span></span>
+      </h1>
+      <p class="texto-grande">{topo.texto}</p>
+      <div class="botoes">
+        <BotaoWhatsapp />
+        <a class="botao botao-contorno" href="#como-funciona">Como funciona</a>
+      </div>
+    </div>
+    <div class="topo-mascote">
+      <span class="manuscrita anotacao cima">{topo.anotacao_1}</span>
+      <img src="/imagens/stickers/mascote-ana-livia.svg" alt="Ilustração da Ana Lívia, a mascote da marca" />
+      <span class="manuscrita anotacao baixo">{topo.anotacao_2}</span>
+    </div>
+  </div>
+</section>

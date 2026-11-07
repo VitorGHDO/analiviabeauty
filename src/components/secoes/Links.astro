@@ -1,0 +1,16 @@
+---
+import site from "../../conteudo/site.yaml";
+import BotaoWhatsapp from "../BotaoWhatsapp.astro";
+const { contato } = site;
+---
+<section class="secao fundo-creme">
+  <div class="links">
+    <h2 class="subtitulo">Tudo em um só lugar</h2>
+    <BotaoWhatsapp classe="link-bio principal">Agendar pelo WhatsApp <span aria-hidden="true">→</span></BotaoWhatsapp>
+    <a class="link-bio" href={`https://www.instagram.com/${contato.instagram}/`} target="_blank" rel="noopener">Instagram @{contato.instagram} <span aria-hidden="true">→</span></a>
+    <a class="link-bio" href="#servicos">Serviços <span aria-hidden="true">→</span></a>
+    <a class="link-bio" href="#como-funciona">Como funciona o atendimento em casa <span aria-hidden="true">→</span></a>
+    <a class="link-bio" href="#valores">Valores e pagamento <span aria-hidden="true">→</span></a>
+    <a class="link-bio" href="#duvidas">Perguntas frequentes <span aria-hidden="true">→</span></a>
+  </div>
+</section>

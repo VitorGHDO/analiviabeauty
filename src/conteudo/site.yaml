@@ -1,0 +1,204 @@
+# =========================================================
+#  CONTEÚDO DO SITE — ANA LÍVIA BEAUTY
+#  Todo o texto do site mora aqui. Edite só o que vem depois
+#  dos dois-pontos (:). Mantenha os espaços do começo da linha
+#  como estão: eles mostram o que pertence a cada bloco.
+#
+#  Dicas:
+#  - Palavra entre *asteriscos* fica colorida (magenta ou rosa).
+#  - Itens de lista começam com "- ". Para incluir um item,
+#    copie um item inteiro e cole embaixo do último.
+#  - Texto com dois-pontos ou aspas no meio: coloque tudo
+#    entre aspas, assim: "Combo: 10% de desconto"
+# =========================================================
+
+
+# ---------- Contato ----------
+contato:
+  whatsapp_numero: "5531000000000"        # 55 + DDD + número, só números
+  whatsapp_escrito: "(31) 00000-0000"     # como aparece escrito no site
+  whatsapp_mensagem: "Oi Ana! Vim pelo site e quero agendar um horário"
+  instagram: "analiviabeautyy"            # sem o @
+  regiao: "Contagem, Belo Horizonte e região"
+  dias: "Segunda a domingo"
+
+
+# ---------- Topo (primeira coisa que aparece) ----------
+topo:
+  rotulo: "Cabeleireira domiciliar · Contagem, BH e região"
+  titulo_linha_1: "Levar o"
+  titulo_linha_2: "cuidado"
+  titulo_linha_3: "até você"      # esta linha fica circulada
+  texto: "Cachos, cor e corte no conforto da sua casa. Eu levo o salão até você e cuido do seu cabelo no seu tempo."
+  anotacao_1: "exclusividade"
+  anotacao_2: "auto cuidado"
+
+
+# ---------- Para quem é ----------
+para_quem:
+  anotacao: "por que em casa?"
+  titulo_pesado: "Para quem é"
+  titulo_italico: "o atendimento em casa"
+  frase: "“Eu escolhi essa forma de atendimento porque existe um público que não gosta ou não é acolhido em salões de beleza.”"
+  publico:
+    - Mulheres com crianças pequenas
+    - Pessoas introvertidas
+    - Pessoas com rotina corrida
+    - Pessoas com dificuldade de mobilidade
+    - Pessoas com sensibilidades auditivas e sensoriais
+    - Pessoas que só não gostam de salão
+  destaque_titulo: "Além disso, cabelos com curvatura ainda são muito desrespeitados em salões tradicionais."
+  destaque_texto: "Aqui, cachos, ondas e crespos são tratados com respeito e carinho."
+
+
+# ---------- Serviços ----------
+# cor: magenta, rosa, calmaria ou raizes
+# sticker: nome do arquivo em public/imagens/stickers
+servicos:
+  anotacao: "o que eu faço"
+  titulo_pesado: "Cachos, cor"
+  titulo_italico: "& corte"
+  texto: "Tudo feito na sua casa, no tempo que o seu cabelo precisa."
+  lista:
+    - nome: Corte de cabelo
+      descricao: Corte pensado para o seu tipo de cabelo e para a sua rotina.
+      cor: magenta
+      sticker: sticker-coque-piscadinha.svg
+    - nome: Tratamento capilar profissional
+      descricao: Hidratação, nutrição e reconstrução para devolver o viço aos fios.
+      cor: rosa
+      sticker: sticker-mascara-capilar.svg
+    - nome: Coloração e descoloração
+      descricao: Mechas, cabelo fantasia, retoque de raiz e muito mais.
+      cor: calmaria
+      sticker: sticker-tigela-pincel.svg
+    - nome: Escova
+      descricao: Escova para o dia a dia ou para uma ocasião especial.
+      cor: raizes
+      sticker: sticker-secador.svg
+  combo: "Combo coloração: agendando 3 serviços de coloração, você ganha *10% de desconto*."
+
+
+# ---------- Como funciona ----------
+como_funciona:
+  anotacao: "passo a passo"
+  titulo_pesado: "Como"
+  titulo_italico: "funciona"
+  passos:
+    - Você me chama no WhatsApp e manda fotos e vídeos do seu cabelo.
+    - Eu avalio e te passo um orçamento justo para o seu cabelo, já com o deslocamento.
+    - Você garante o seu horário com um sinal de 30%.
+    - "No dia, eu chego com tudo: lavatório portátil, produtos e ferramentas."
+    - Cuido do seu cabelo com calma, no conforto da sua casa.
+  em_casa_titulo: "O que você precisa ter em casa"
+  em_casa_texto: "Só um ponto de água e um lugar para descartar a água. O resto eu levo."
+  # Fotos: salve em public/imagens/fotos com o nome indicado
+  fotos:
+    - arquivo: lavatorio.jpg
+      legenda: "Foto: lavatório portátil montado na casa da cliente"
+    - arquivo: malas.jpg
+      legenda: "Foto: Ana chegando com as malas de atendimento"
+
+
+# ---------- Valores e pagamento ----------
+valores:
+  titulo_pesado: "Valores"
+  titulo_italico: "sob medida"
+  texto: "Cada cabelo é único, então o preço também. Antes de agendar, faço uma entrevista e peço fotos e vídeos do seu cabelo. Assim chego a um valor mais certeiro e justo."
+  cartoes:
+    - titulo: Serviço + deslocamento
+      texto: O valor final soma o serviço e o deslocamento até você. Atendo Contagem, Belo Horizonte e região.
+    - titulo: Sinal de 30%
+      texto: Garante o seu horário. Se precisar cancelar, o valor fica guardado e é descontado no seu próximo atendimento.
+    - titulo: Todos os dias
+      texto: Atendo de segunda a domingo. O horário a gente combina pelo WhatsApp.
+  pagamento_titulo: Formas de pagamento
+  pagamento:
+    - Pix
+    - Dinheiro
+    - Débito
+    - Crédito
+
+
+# ---------- Resultados (galeria de fotos) ----------
+# Salve as fotos em public/imagens/fotos com o nome indicado.
+# Enquanto a foto não existir, aparece o espaço tracejado com a legenda.
+resultados:
+  titulo_pesado: "Resultados"
+  titulo_italico: "de verdade"
+  fotos:
+    - arquivo: resultado-1.jpg
+      legenda: "Antes e depois · cachos"
+    - arquivo: resultado-2.jpg
+      legenda: "Coloração · mechas"
+    - arquivo: resultado-3.jpg
+      legenda: "Cabelo fantasia"
+    - arquivo: resultado-4.jpg
+      legenda: "Retoque de raiz"
+    - arquivo: resultado-5.jpg
+      legenda: "Corte"
+    - arquivo: resultado-6.jpg
+      legenda: "Escova"
+
+
+# ---------- Depoimentos ----------
+depoimentos:
+  titulo_pesado: "O que elas"
+  titulo_italico: "dizem"
+  lista:
+    - texto: "Livia do céu! Meu cabelo está OUTRO, muito mais definido, suas mãos fizeram milagre nesse cabelo. (…) Valeu a pena demais, e além de tudo, um atendimento personalizado, o que conta MUITO!"
+      nome: "Cliente, pelo WhatsApp"
+    - texto: "Mesmo sem saber os tons que a outra profissional usou e apenas mandando foto pra Livia, ela conseguiu identificar as numerações certas pra voltar o meu tom natural. Além disso, ela deu corte no meu cabelo exatamente como tinha pedido. Isso nunca tinha acontecido nos meus 20 anos de vida."
+      nome: "Rute"
+    - texto: "Só confio em você pra escovar e cortar meu cabelo kkk. Eu amo seu trabalho."
+      nome: "Cliente, pelo WhatsApp"
+
+
+# ---------- Sobre a Ana ----------
+sobre:
+  anotacao: "prazer,"
+  nome: "Ana Lívia"
+  rotulo: "Cabeleireira domiciliar"
+  foto: ana.jpg
+  foto_legenda: "Foto: retrato da Ana Lívia com o avental da marca"
+  # Para um texto em vários parágrafos, use um item "- " por parágrafo
+  historia:
+    - "[Espaço para a história da Ana Lívia: como ela começou, por que escolheu atender em casa e o que mais ama no trabalho.]"
+  valores:
+    - acolhimento
+    - diversidade capilar
+    - autenticidade
+
+
+# ---------- Perguntas frequentes ----------
+duvidas:
+  titulo_pesado: "Dúvidas"
+  titulo_italico: "frequentes"
+  lista:
+    - pergunta: Preciso ter lavatório em casa?
+      resposta: Não. Eu levo um lavatório portátil. Você só precisa de um ponto de água e de um lugar para descartar a água.
+    - pergunta: Quanto custa?
+      resposta: O valor varia de cabelo para cabelo. Antes de agendar, peço fotos e vídeos para te passar um orçamento justo. O valor final é o serviço mais o deslocamento.
+    - pergunta: Onde você atende?
+      resposta: Em Contagem, Belo Horizonte e região.
+    - pergunta: Como funciona o sinal?
+      resposta: Para reservar o horário, peço um sinal de 30% do valor. Se você precisar cancelar, o sinal fica guardado e é descontado no seu próximo atendimento.
+    - pergunta: Quais são as formas de pagamento?
+      resposta: Pix, dinheiro, cartão de débito e cartão de crédito.
+    - pergunta: Quais dias você atende?
+      resposta: De segunda a domingo. O horário a gente combina pelo WhatsApp.
+    - pergunta: Tem desconto?
+      resposta: "Tem: agendando 3 serviços de coloração, você ganha 10% de desconto."
+
+
+# ---------- Fechamento ----------
+final:
+  titulo_pesado: "Beleza que acolhe."
+  titulo_italico: "Cuidado que vai até você."
+  texto: "Me chama no WhatsApp e me conta do seu cabelo. Vamos juntas!"
+
+
+# ---------- Página (Google e compartilhamento) ----------
+pagina:
+  titulo: "Ana Lívia Beauty | Cabeleireira domiciliar em Contagem, BH e região"
+  descricao: "Cachos, cor e corte no conforto da sua casa. Atendimento domiciliar em Contagem, Belo Horizonte e região. Agende pelo WhatsApp."

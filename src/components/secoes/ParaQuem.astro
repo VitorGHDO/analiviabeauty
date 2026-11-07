@@ -1,0 +1,26 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+const s = site.para_quem;
+---
+<section class="secao fundo-calmaria" id="para-quem">
+  <div class="conteudo">
+    <Titulo anotacao={s.anotacao} pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <p class="subtitulo" style="max-width: 860px">{s.frase}</p>
+    <div class="grade-publico">
+      {s.publico.map((item) => (
+        <div class="item-estrela">
+          <img class="estrela" src="/imagens/marca/estrela-rosa.svg" alt="" />
+          {item}
+        </div>
+      ))}
+    </div>
+    <div class="caixa-rosa">
+      <div>
+        <p class="subtitulo">{s.destaque_titulo}</p>
+        <p>{s.destaque_texto}</p>
+      </div>
+      <img src="/imagens/stickers/sticker-cachos-coracao.svg" alt="Ilustração de uma menina de cachos volumosos" />
+    </div>
+  </div>
+</section>

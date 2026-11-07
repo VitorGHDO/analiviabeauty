@@ -1,0 +1,95 @@
+/* Ana Lívia Beauty — generated from tokens.json */
+:root, [data-theme="creme"] {
+  --beleza-intimista: #f4b3bf;
+  --calmaria: #42412c;
+  --rosa-fora-da-caixa: #b40252;
+  --raizes: #492b00;
+  --auto-cuidado: #fff7e6;
+  --creme-logo: #fffdde;
+  --contorno-sticker: #fdedd3;
+  --rosa-vivo: #e03b6e;
+  --fundo: #fff7e6;
+  --tinta: #42412c;
+  --tinta-suave: #42412cc7;
+  --acento: #b40252;
+  --cta: #b40252;
+  --on-cta: #fff7e6;
+  --linha: #42412c;
+  --cartao: #fffdde;
+  --on-cartao: #42412c;
+  --sombra-cartao: 0 24px 60px #42412c26;
+}
+[data-theme="calmaria"] {
+  --fundo: #42412c;
+  --tinta: #fff7e6;
+  --tinta-suave: #fff7e6d9;
+  --acento: #f4b3bf;
+  --cta: #f4b3bf;
+  --on-cta: #42412c;
+  --linha: #fff7e6;
+  --cartao: #fff7e6;
+  --on-cartao: #42412c;
+}
+[data-theme="magenta"] {
+  --fundo: #b40252;
+  --tinta: #fff7e6;
+  --tinta-suave: #fff7e6d9;
+  --acento: #f4b3bf;
+  --cta: #fff7e6;
+  --on-cta: #b40252;
+  --linha: #fff7e6;
+  --cartao: #fff7e6;
+  --on-cartao: #42412c;
+}
+[data-theme="raizes"] {
+  --fundo: #492b00;
+  --tinta: #fff7e6;
+  --tinta-suave: #fff7e6d9;
+  --acento: #f4b3bf;
+  --cta: #f4b3bf;
+  --on-cta: #492b00;
+  --linha: #fff7e6;
+  --cartao: #fff7e6;
+  --on-cartao: #42412c;
+}
+:root {
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-6: 48px;
+  --espaco-8: 64px;
+  --margem-post: 80px;
+  --espaco-12: 120px;
+  --raio-sm: 16px;
+  --raio-caixa: 28px;
+  --raio-cartao: 40px;
+  --raio-foto: 48px;
+  --raio-pill: 999px;
+  --traco-fino: 3px;
+  --traco-sticker: 12px;
+  --post-largura: 1080px;
+  --post-altura: 1350px;
+  --quadrado-altura: 1080px;
+  --story-altura: 1920px;
+  --font-titulo: "Newsreader", "Sitka Subheading", Georgia, serif;
+  --font-impacto: "Libre Franklin", "Americane", "Arial Black", sans-serif;
+  --font-manuscrita: "Just Me Again Down Here", "Sunset Script", cursive;
+  --font-texto: "Inter", system-ui, sans-serif;
+}
+.titulo-xl { font-family: var(--font-titulo); font-size: 150px; line-height: 0.88; font-weight: 700; font-style: italic; letter-spacing: -0.03em; }
+.titulo-lg { font-family: var(--font-titulo); font-size: 112px; line-height: 0.9; font-weight: 700; font-style: italic; letter-spacing: -0.03em; }
+.titulo-md { font-family: var(--font-titulo); font-size: 76px; line-height: 0.95; font-weight: 700; font-style: italic; letter-spacing: -0.025em; }
+.titulo-cartao { font-family: var(--font-titulo); font-size: 60px; line-height: 0.95; font-weight: 700; font-style: italic; letter-spacing: -0.02em; }
+.titulo-sm { font-family: var(--font-titulo); font-size: 44px; line-height: 1.05; font-weight: 700; font-style: italic; letter-spacing: -0.015em; }
+.impacto-xl { font-family: var(--font-impacto); font-size: 150px; line-height: 0.86; font-weight: 800; letter-spacing: -0.05em; }
+.impacto-lg { font-family: var(--font-impacto); font-size: 104px; line-height: 0.88; font-weight: 800; letter-spacing: -0.045em; }
+.impacto-md { font-family: var(--font-impacto); font-size: 64px; line-height: 0.9; font-weight: 800; letter-spacing: -0.04em; }
+.preco { font-family: var(--font-impacto); font-size: 160px; line-height: 0.8; font-weight: 800; letter-spacing: -0.05em; }
+.manuscrita-lg { font-family: var(--font-manuscrita); font-size: 76px; line-height: 0.95; font-weight: 400; }
+.manuscrita-md { font-family: var(--font-manuscrita); font-size: 46px; line-height: 1; font-weight: 400; }
+.texto-lg { font-family: var(--font-texto); font-size: 36px; line-height: 1.3; font-weight: 400; }
+.texto-md { font-family: var(--font-texto); font-size: 30px; line-height: 1.35; font-weight: 400; }
+.texto-sm { font-family: var(--font-texto); font-size: 24px; line-height: 1.4; font-weight: 400; }
+.cta-numero { font-family: var(--font-texto); font-size: 42px; line-height: 1; font-weight: 700; letter-spacing: -0.01em; }
+.rotulo { font-family: var(--font-texto); font-size: 18px; line-height: 1.2; font-weight: 500; letter-spacing: 0.16em; }

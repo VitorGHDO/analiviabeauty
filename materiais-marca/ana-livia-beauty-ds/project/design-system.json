@@ -1,0 +1,396 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-06T19:58:15Z"
+  },
+  "title": "Ana Lívia Beauty",
+  "namespace": "AnaLivia",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Stickers",
+    "Selos",
+    "Icones",
+    "Ornamentos",
+    "Fotos"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "logo-ana-livia-calmaria.svg",
+        "logo-ana-livia-creme.svg",
+        "logo-ana-livia-magenta.svg",
+        "logo-ana-livia-para-fundo-magenta.svg",
+        "assinatura-completa-calmaria.svg",
+        "assinatura-completa-creme.svg",
+        "assinatura-completa-para-fundo-magenta.svg",
+        "monograma-al-contorno-rosa.svg",
+        "monograma-al-contorno-magenta.svg",
+        "monograma-al-contorno-calmaria.svg",
+        "monograma-al-contorno-creme.svg"
+      ],
+      "files": {
+        "logo-ana-livia-calmaria.svg": {
+          "name": "logo-ana-livia-calmaria.svg",
+          "blob": "87148cb815c8df4a3daf28ea1851a738",
+          "size": 12295,
+          "type": "image/svg+xml"
+        },
+        "logo-ana-livia-creme.svg": {
+          "name": "logo-ana-livia-creme.svg",
+          "blob": "8979278e87999dc10b7a7b115bca122c",
+          "size": 12295,
+          "type": "image/svg+xml"
+        },
+        "logo-ana-livia-magenta.svg": {
+          "name": "logo-ana-livia-magenta.svg",
+          "blob": "38f095f9f0309fbf83847a015475d773",
+          "size": 12295,
+          "type": "image/svg+xml"
+        },
+        "logo-ana-livia-para-fundo-magenta.svg": {
+          "name": "logo-ana-livia-para-fundo-magenta.svg",
+          "blob": "63098ba81cb02863749801176b04b39a",
+          "size": 12295,
+          "type": "image/svg+xml"
+        },
+        "assinatura-completa-calmaria.svg": {
+          "name": "assinatura-completa-calmaria.svg",
+          "blob": "116713ce4e0eb3202d72e11c1b8e9604",
+          "size": 255009,
+          "type": "image/svg+xml"
+        },
+        "assinatura-completa-creme.svg": {
+          "name": "assinatura-completa-creme.svg",
+          "blob": "ffd1a80ad2f4c9b91e1ca6c936ddcfdc",
+          "size": 255009,
+          "type": "image/svg+xml"
+        },
+        "assinatura-completa-para-fundo-magenta.svg": {
+          "name": "assinatura-completa-para-fundo-magenta.svg",
+          "blob": "ed4db77aa61565f21f90e968daf225dd",
+          "size": 255001,
+          "type": "image/svg+xml"
+        },
+        "monograma-al-contorno-rosa.svg": {
+          "name": "monograma-al-contorno-rosa.svg",
+          "blob": "d2c1720aaa91e7410ff952a07f030311",
+          "size": 4075,
+          "type": "image/svg+xml"
+        },
+        "monograma-al-contorno-magenta.svg": {
+          "name": "monograma-al-contorno-magenta.svg",
+          "blob": "ee8058fbb23c50766185a34c27175e04",
+          "size": 4075,
+          "type": "image/svg+xml"
+        },
+        "monograma-al-contorno-calmaria.svg": {
+          "name": "monograma-al-contorno-calmaria.svg",
+          "blob": "7ac31f944ee2772538173846a8a95206",
+          "size": 4075,
+          "type": "image/svg+xml"
+        },
+        "monograma-al-contorno-creme.svg": {
+          "name": "monograma-al-contorno-creme.svg",
+          "blob": "9ce07342a9452867d20292e565b65bfb",
+          "size": 4075,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Stickers": {
+      "name": "Stickers",
+      "tile": "m",
+      "order": [
+        "mascote-ana-livia.svg",
+        "sticker-cachos-coracao.svg",
+        "sticker-coque-piscadinha.svg",
+        "sticker-chanel-brilho.svg",
+        "sticker-secador.svg",
+        "sticker-mascara-capilar.svg",
+        "sticker-tigela-pincel.svg"
+      ],
+      "files": {
+        "mascote-ana-livia.svg": {
+          "name": "mascote-ana-livia.svg",
+          "blob": "89fd7f782e23384645eec1a340c5508f",
+          "size": 220778,
+          "type": "image/svg+xml"
+        },
+        "sticker-cachos-coracao.svg": {
+          "name": "sticker-cachos-coracao.svg",
+          "blob": "c9ee2ba9f3ff50367aaa4527e7b1109e",
+          "size": 94665,
+          "type": "image/svg+xml"
+        },
+        "sticker-coque-piscadinha.svg": {
+          "name": "sticker-coque-piscadinha.svg",
+          "blob": "a0f0f82f4234ab41ce19b2f14affc6bf",
+          "size": 53476,
+          "type": "image/svg+xml"
+        },
+        "sticker-chanel-brilho.svg": {
+          "name": "sticker-chanel-brilho.svg",
+          "blob": "4dbadf1542fd4a5f52f620a0443e559d",
+          "size": 33112,
+          "type": "image/svg+xml"
+        },
+        "sticker-secador.svg": {
+          "name": "sticker-secador.svg",
+          "blob": "96c3d48ba0ce9a41bf1bd43465df2923",
+          "size": 14013,
+          "type": "image/svg+xml"
+        },
+        "sticker-mascara-capilar.svg": {
+          "name": "sticker-mascara-capilar.svg",
+          "blob": "2bdf22f58afeffcc99fecb9128c5e921",
+          "size": 15017,
+          "type": "image/svg+xml"
+        },
+        "sticker-tigela-pincel.svg": {
+          "name": "sticker-tigela-pincel.svg",
+          "blob": "5a76d8d16fced319e07a6ad957d88c6c",
+          "size": 14317,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Selos": {
+      "name": "Selos",
+      "tile": "s",
+      "order": [
+        "selo-logo-listras.png",
+        "selo-mascote.png",
+        "selo-cuidado-em-casa.png",
+        "selo-seu-cabelo-seu-jeito.png"
+      ],
+      "files": {
+        "selo-logo-listras.png": {
+          "name": "selo-logo-listras.png",
+          "blob": "948be3ff8ecb432799f19b28fb9f6e29",
+          "size": 25493,
+          "type": "image/png"
+        },
+        "selo-mascote.png": {
+          "name": "selo-mascote.png",
+          "blob": "694eec09f01fd037322f461d73e10759",
+          "size": 32140,
+          "type": "image/png"
+        },
+        "selo-cuidado-em-casa.png": {
+          "name": "selo-cuidado-em-casa.png",
+          "blob": "4a2cb2ff36899ea8236d9cbb020c90a6",
+          "size": 22817,
+          "type": "image/png"
+        },
+        "selo-seu-cabelo-seu-jeito.png": {
+          "name": "selo-seu-cabelo-seu-jeito.png",
+          "blob": "207ffb7c10f53c54dc481371b9439863",
+          "size": 47296,
+          "type": "image/png"
+        }
+      }
+    },
+    "Icones": {
+      "name": "Icones",
+      "tile": "xs",
+      "order": [
+        "raizes-magenta.svg",
+        "raizes-calmaria.svg",
+        "raizes-rosa.svg",
+        "raizes-creme.svg",
+        "tesoura-magenta.svg",
+        "tesoura-calmaria.svg",
+        "tesoura-rosa.svg",
+        "tesoura-creme.svg",
+        "movimento-magenta.svg",
+        "movimento-calmaria.svg",
+        "movimento-rosa.svg",
+        "movimento-creme.svg",
+        "estrela-magenta.svg",
+        "estrela-calmaria.svg",
+        "estrela-rosa.svg",
+        "estrela-creme.svg"
+      ],
+      "files": {
+        "raizes-magenta.svg": {
+          "name": "raizes-magenta.svg",
+          "blob": "9c9f6124e966951d5dafd011604e7937",
+          "size": 1371,
+          "type": "image/svg+xml"
+        },
+        "raizes-calmaria.svg": {
+          "name": "raizes-calmaria.svg",
+          "blob": "436ee275118188e4c12f6380c0ed3d07",
+          "size": 1371,
+          "type": "image/svg+xml"
+        },
+        "raizes-rosa.svg": {
+          "name": "raizes-rosa.svg",
+          "blob": "1df1f6412c4fd1cd9a96998e77ad2f79",
+          "size": 1371,
+          "type": "image/svg+xml"
+        },
+        "raizes-creme.svg": {
+          "name": "raizes-creme.svg",
+          "blob": "2b55a104f79bcc37b2d3318c00338f85",
+          "size": 1371,
+          "type": "image/svg+xml"
+        },
+        "tesoura-magenta.svg": {
+          "name": "tesoura-magenta.svg",
+          "blob": "01eacd33c24ead6325d886fdd91da202",
+          "size": 1357,
+          "type": "image/svg+xml"
+        },
+        "tesoura-calmaria.svg": {
+          "name": "tesoura-calmaria.svg",
+          "blob": "6cff1681359722c49abd80a53e25547d",
+          "size": 1357,
+          "type": "image/svg+xml"
+        },
+        "tesoura-rosa.svg": {
+          "name": "tesoura-rosa.svg",
+          "blob": "9e5698be5722b25d8ab90f6df7c4d419",
+          "size": 1357,
+          "type": "image/svg+xml"
+        },
+        "tesoura-creme.svg": {
+          "name": "tesoura-creme.svg",
+          "blob": "a93a6a3419faa31519d9d31b28c96bcb",
+          "size": 1357,
+          "type": "image/svg+xml"
+        },
+        "movimento-magenta.svg": {
+          "name": "movimento-magenta.svg",
+          "blob": "c3bfd72669adae4ea2efddf0180120d6",
+          "size": 2544,
+          "type": "image/svg+xml"
+        },
+        "movimento-calmaria.svg": {
+          "name": "movimento-calmaria.svg",
+          "blob": "f3914ea6f2064464b9dae6140ab5526c",
+          "size": 2544,
+          "type": "image/svg+xml"
+        },
+        "movimento-rosa.svg": {
+          "name": "movimento-rosa.svg",
+          "blob": "f6d136158f66ad64d120601fd1d118e5",
+          "size": 2544,
+          "type": "image/svg+xml"
+        },
+        "movimento-creme.svg": {
+          "name": "movimento-creme.svg",
+          "blob": "aebcd7638ec6428787a868f683fbfa4e",
+          "size": 2544,
+          "type": "image/svg+xml"
+        },
+        "estrela-magenta.svg": {
+          "name": "estrela-magenta.svg",
+          "blob": "d51e93f206fb0fd83f00339fbcb3fc90",
+          "size": 844,
+          "type": "image/svg+xml"
+        },
+        "estrela-calmaria.svg": {
+          "name": "estrela-calmaria.svg",
+          "blob": "a8fdb744c175e6338221446308f74bda",
+          "size": 844,
+          "type": "image/svg+xml"
+        },
+        "estrela-rosa.svg": {
+          "name": "estrela-rosa.svg",
+          "blob": "93b635dac1e543fc06589b91f37d11da",
+          "size": 844,
+          "type": "image/svg+xml"
+        },
+        "estrela-creme.svg": {
+          "name": "estrela-creme.svg",
+          "blob": "9817ef40a06d06d4a662b00fd475d7ac",
+          "size": 844,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Ornamentos": {
+      "name": "Ornamentos",
+      "tile": "s",
+      "order": [
+        "ondas-magenta.svg",
+        "ondas-rosa.svg",
+        "ondas-creme.svg"
+      ],
+      "files": {
+        "ondas-magenta.svg": {
+          "name": "ondas-magenta.svg",
+          "blob": "4e87911aabf57bd46f7d5fa0d1e2bbe4",
+          "size": 4902,
+          "type": "image/svg+xml"
+        },
+        "ondas-rosa.svg": {
+          "name": "ondas-rosa.svg",
+          "blob": "c30e603ba193581c694e050da5cd0f59",
+          "size": 4902,
+          "type": "image/svg+xml"
+        },
+        "ondas-creme.svg": {
+          "name": "ondas-creme.svg",
+          "blob": "eddc407ad61320bbec36228d3507b1f0",
+          "size": 4902,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Fotos": {
+      "name": "Fotos",
+      "tile": "m",
+      "order": [
+        "foto-atendimento-em-casa.jpg",
+        "foto-cachos-listras.jpg",
+        "foto-cadeira-ondas.jpg",
+        "foto-mala-de-atendimento.jpg"
+      ],
+      "files": {
+        "foto-atendimento-em-casa.jpg": {
+          "name": "foto-atendimento-em-casa.jpg",
+          "blob": "bd2b890ab857137d7e885a84ea3fda0b",
+          "size": 236788,
+          "type": "image/jpeg"
+        },
+        "foto-cachos-listras.jpg": {
+          "name": "foto-cachos-listras.jpg",
+          "blob": "02be4b5c7a2eb4963d12f91df36016e5",
+          "size": 394725,
+          "type": "image/jpeg"
+        },
+        "foto-cadeira-ondas.jpg": {
+          "name": "foto-cadeira-ondas.jpg",
+          "blob": "7039c82662ba7582c3889776cd73c89c",
+          "size": 198789,
+          "type": "image/jpeg"
+        },
+        "foto-mala-de-atendimento.jpg": {
+          "name": "foto-mala-de-atendimento.jpg",
+          "blob": "e6a93fd99c66086f6e83e70fb93b1a00",
+          "size": 167113,
+          "type": "image/jpeg"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-11-06T19:59:15Z",
+    "via": "Claude Code",
+    "note": "Design system criado a partir do manual da marca e das referências de posts."
+  }
+}

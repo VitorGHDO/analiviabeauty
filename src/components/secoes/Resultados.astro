@@ -1,0 +1,14 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+import Foto from "../Foto.astro";
+const s = site.resultados;
+---
+<section class="secao fundo-raizes">
+  <div class="conteudo">
+    <Titulo pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <div class="galeria">
+      {s.fotos.map((f) => <Foto arquivo={f.arquivo} legenda={`Foto: ${f.legenda}`} />)}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Elementos" height=900 width=1080 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Caixa de preço</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Just+Me+Again+Down+Here&amp;family=Libre+Franklin:wght@700;800;900&amp;family=Newsreader:ital,opsz,wght@1,6..72,600;1,6..72,700;1,6..72,800&amp;display=swap">
+<style>
+body { margin: 0; }
+.grade { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 32px; }
+.grade > div { border-radius: var(--raio-cartao); padding: 48px 80px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; box-sizing: border-box; background: var(--fundo); }
+.grade > div:first-child { height: 300px; }
+.grade > div:last-child { height: 500px; align-items: stretch; }
+</style>
+</head>
+<body>
+<div class="grade">
+  <div data-theme="magenta">
+    <div class="al-caixa-preco"><span class="texto-lg">por apenas:</span><span class="al-preco"><span class="al-preco__moeda">R$</span><span class="preco">110</span><span class="al-preco__centavos">,00</span></span></div>
+  </div>
+  <div data-theme="calmaria">
+    <div class="al-combo"><span class="titulo-sm">Escova +<br>Hidratação</span><span class="al-combo__valor"><span class="al-preco"><span class="al-preco__moeda">R$</span><span class="preco">120</span><span class="al-preco__centavos">,00</span></span><span class="texto-sm">em até 2x no cartão</span></span></div>
+    <div class="al-combo"><span class="titulo-sm">Corte +<br>Hidratação</span><span class="al-combo__valor"><span class="al-preco"><span class="al-preco__moeda">R$</span><span class="preco">150</span><span class="al-preco__centavos">,00</span></span><span class="texto-sm">em até 2x no cartão</span></span></div>
+  </div>
+</div>
+</body>
+</html>

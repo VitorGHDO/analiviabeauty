@@ -1,0 +1,25 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+const s = site.valores;
+---
+<section class="secao fundo-creme" id="valores">
+  <div class="conteudo">
+    <Titulo pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <p class="texto-grande">{s.texto}</p>
+    <div class="grade">
+      {s.cartoes.map((c) => (
+        <div class="cartao-claro">
+          <h3>{c.titulo}</h3>
+          <p>{c.texto}</p>
+        </div>
+      ))}
+      <div class="cartao-claro">
+        <h3>{s.pagamento_titulo}</h3>
+        <div class="etiquetas">
+          {s.pagamento.map((p) => <span class="etiqueta">{p}</span>)}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

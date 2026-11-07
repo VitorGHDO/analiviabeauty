@@ -1,0 +1,8 @@
+---
+import site from "../conteudo/site.yaml";
+import { linkWhatsapp } from "../lib/util.js";
+const { classe = "botao botao-cheio" } = Astro.props;
+---
+<a class={classe} href={linkWhatsapp(site.contato)} target="_blank" rel="noopener">
+  <slot>Agendar pelo WhatsApp</slot>
+</a>

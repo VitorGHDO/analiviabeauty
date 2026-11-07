@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ana Lívia Beauty</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Just+Me+Again+Down+Here&amp;family=Libre+Franklin:wght@700;800;900&amp;family=Newsreader:ital,opsz,wght@1,6..72,600;1,6..72,700;1,6..72,800&amp;display=swap">
+<style>
+html, body { margin: 0; height: 100%; }
+body { background: var(--auto-cuidado); color: var(--calmaria); font-family: var(--font-texto); overflow: hidden; }
+.cover { position: relative; height: 288px; overflow: hidden; }
+.art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+.art svg { display: block; width: 480px; height: 288px; }
+.magenta { fill: var(--rosa-fora-da-caixa); }
+.rosa { fill: var(--beleza-intimista); }
+.calmaria { fill: var(--calmaria); }
+.raizes { fill: var(--raizes); }
+.cartao { rx: var(--raio-cartao); }
+.caixa { rx: var(--raio-caixa); }
+.etiqueta { rx: var(--raio-sm); }
+.words { position: absolute; left: var(--espaco-6); bottom: var(--espaco-6); max-width: 440px; }
+.name { margin: 0; font-family: var(--font-titulo); font-style: italic; font-weight: 700; font-size: 88px; line-height: .95; letter-spacing: -0.03em; color: var(--calmaria); }
+.tag { margin: var(--espaco-2) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--calmaria); opacity: .8; }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      rosa-fora-da-caixa slab 192×368 bleeding top and bottom (the colour the brand is known by) · calmaria 160×200 · beleza-intimista 160×80 bleeding the top · raizes 112×144 bleeding the right edge
+  arrangement one tall striped slab with satellites stepped down to the right, bottoms on one line espaco-3 above the edge, espaco-2 gutters
+  pattern     stripes, because vertical magenta stripes are the brand's own print (apron, suitcase, welcome card, posts): beleza-intimista stripes espaco-3 wide at an espaco-6 pitch cut into the slab
+  scales      sides in espaco-2 multiples; gutters espaco-2; stripe pitch espaco-6; corners raio-cartao on calmaria, raio-caixa on raizes, raio-sm on the rosa tile
+-->
+<rect class="magenta" x="0" y="-40" width="192" height="368"/>
+<rect class="rosa" x="24" y="-40" width="24" height="368"/>
+<rect class="rosa" x="72" y="-40" width="24" height="368"/>
+<rect class="rosa" x="120" y="-40" width="24" height="368"/>
+<rect class="rosa" x="168" y="-40" width="24" height="368"/>
+<rect class="rosa etiqueta" x="208" y="-32" width="160" height="80" rx="16"/>
+<rect class="calmaria cartao" x="208" y="64" width="160" height="200" rx="40"/>
+<rect class="raizes caixa" x="384" y="120" width="112" height="144" rx="28"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Ana Lívia<br>Beauty</h1>
+<p class="tag">Beleza que acolhe. Cuidado que vai até você.</p>
+</div>
+</div>
+</body>
+</html>

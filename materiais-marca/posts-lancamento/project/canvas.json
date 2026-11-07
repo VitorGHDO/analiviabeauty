@@ -1,0 +1,19 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-11-06T21:03:00Z" },
+  "title": "Posts de lançamento Ana Lívia Beauty",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1080, "h": 1350, "title": "Apresentação da marca" },
+    "Cronograma.dc.html": { "x": 1160, "y": 0, "w": 1080, "h": 1350, "title": "Cronograma capilar" },
+    "Resultado.dc.html": { "x": 2320, "y": 0, "w": 1080, "h": 1350, "title": "Resultado" }
+  },
+  "order": ["Main.dc.html", "Cronograma.dc.html", "Resultado.dc.html"],
+  "notes": {
+    "titulo": { "x": 0, "y": -320, "text": "Lançamento Ana Lívia Beauty · feed 1080 × 1350", "kind": "title1", "maxW": 3400 }
+  },
+  "designSystems": [
+    { "title": "Ana Lívia Beauty", "namespace": "analivia", "artifact": "https://claude.ai/artifact/PSZYhfbE6rBkcLwbdrqLCL", "version": "1793995166-c400", "copiedAt": "2026-11-06T21:03:00Z" }
+  ]
+}

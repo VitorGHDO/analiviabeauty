@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Just+Me+Again+Down+Here&family=Libre+Franklin:wght@700;800;900&family=Newsreader:ital,opsz,wght@1,6..72,600;1,6..72,700;1,6..72,800&display=swap");
+
+/* Ana Lívia Beauty — componentes de post (prefixo al-).
+   Cores, fontes, espaços e raios vêm de tokens.css. A tipografia usa as classes
+   geradas pelos tokens (titulo-lg, impacto-xl, manuscrita-md, texto-md, rotulo…). */
+
+body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--font-texto); }
+
+/* ---------- Tela do post ---------- */
+.al-post {
+  position: relative;
+  box-sizing: border-box;
+  width: var(--post-largura);
+  height: var(--post-altura);
+  overflow: hidden;
+  isolation: isolate;
+  background-color: var(--fundo);
+  color: var(--tinta);
+  font-family: var(--font-texto);
+  -webkit-font-smoothing: antialiased;
+}
+.al-post *, .al-post *::before, .al-post *::after { box-sizing: border-box; }
+.al-post h1, .al-post h2, .al-post h3, .al-post p { margin: 0; }
+.al-post h1, .al-post h2, .al-post h3 { text-wrap: balance; }
+.al-post--quadrado { height: var(--quadrado-altura); }
+.al-post--story { height: var(--story-altura); }
+
+/* área útil dentro da margem de segurança */
+.al-area { position: absolute; inset: var(--margem-post); display: flex; flex-direction: column; }
+.al-centro { align-items: center; text-align: center; }
+
+/* microtextos da moldura */
+.al-hashtag, .al-rodape { position: absolute; z-index: 5; color: var(--tinta-suave); text-transform: uppercase; white-space: nowrap; }
+.al-hashtag { top: var(--espaco-6); right: var(--espaco-6); }
+.al-rodape { bottom: var(--espaco-6); left: var(--espaco-6); }
+.al-rodape--direita { left: auto; right: var(--espaco-6); }
+.al-marca { position: absolute; z-index: 5; bottom: var(--espaco-6); right: var(--espaco-6); width: 150px; height: auto; }
+
+/* ---------- Foto de fundo e véu ---------- */
+.al-foto-fundo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.al-veu { position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, var(--fundo) 12%, transparent 68%); }
+.al-veu--total { background: var(--fundo); opacity: .68; }
+.al-veu--topo { background: linear-gradient(to bottom, var(--fundo) 10%, transparent 55%); }
+
+/* ---------- Cores de texto ---------- */
+.al-cor-tinta { color: var(--tinta); }
+.al-cor-acento { color: var(--acento); }
+.al-cor-magenta { color: var(--rosa-fora-da-caixa); }
+.al-cor-rosa { color: var(--beleza-intimista); }
+.al-cor-creme { color: var(--auto-cuidado); }
+.al-cor-calmaria { color: var(--calmaria); }
+.al-forte { font-weight: 700; }
+
+/* ---------- Estrela de quatro pontas ---------- */
+.al-estrela { display: inline-block; flex: none; width: 64px; height: auto; vertical-align: middle; fill: currentColor; color: var(--acento); }
+.al-estrela--sm { width: 36px; }
+.al-estrela--lg { width: 110px; }
+.al-solta { position: absolute; z-index: 4; }
+
+/* ---------- Título misto (pesada + itálico) ---------- */
+.al-titulo-misto { display: flex; flex-direction: column; align-items: flex-start; margin: 0; }
+.al-titulo-misto > * { display: block; }
+.al-titulo-misto--centro { align-items: center; text-align: center; }
+
+/* ---------- Círculo desenhado à mão ---------- */
+.al-circulado { position: relative; display: inline-block; }
+.al-circulado::after {
+  content: ""; position: absolute; inset: -0.14em -0.3em -0.08em;
+  border: var(--traco-fino) solid var(--linha); border-radius: 50%;
+  transform: rotate(-3deg); pointer-events: none;
+}
+.al-circulado--acento::after { border-color: var(--acento); }
+
+/* ---------- Anotação manuscrita ---------- */
+.al-anotacao { position: absolute; z-index: 4; color: var(--acento); white-space: nowrap; text-transform: lowercase; transform: rotate(var(--giro, -4deg)); }
+.al-anotacao--tinta { color: var(--tinta); }
+
+/* ---------- CTA: Agende seu horário ---------- */
+.al-agende { display: inline-flex; flex-direction: column; align-items: center; gap: var(--espaco-2); }
+.al-agende--esquerda { align-items: flex-start; }
+.al-agende__rotulo { color: var(--tinta); }
+.al-agende__pill {
+  display: inline-flex; align-items: baseline; gap: .3em; white-space: nowrap;
+  padding: 14px 44px 16px; border-radius: var(--raio-pill);
+  background: var(--cta); color: var(--on-cta);
+}
+.al-agende__ddd { font-size: .5em; font-weight: 600; }
+.al-agende--contorno .al-agende__rotulo { padding: 8px 28px 10px; border: var(--traco-fino) solid var(--linha); border-radius: var(--raio-pill); }
+.al-agende--contorno .al-agende__pill { padding: 0; background: none; color: var(--tinta); }
+.al-agende--simples .al-agende__pill { padding: 0; background: none; color: var(--tinta); }
+
+/* ---------- Etiquetas, faixa, divisória ---------- */
+.al-etiqueta { display: inline-block; padding: 6px 24px 10px; border-radius: var(--raio-sm); background: var(--cta); color: var(--on-cta); }
+.al-etiqueta--contorno { padding: 8px 30px 10px; border: var(--traco-fino) solid var(--linha); border-radius: var(--raio-pill); background: none; color: var(--tinta); }
+.al-faixa { padding: var(--espaco-3) var(--espaco-6) var(--espaco-4); border-radius: var(--raio-sm); background: var(--cta); color: var(--on-cta); text-align: center; }
+.al-divisoria { width: 160px; height: 0; border: 0; border-top: var(--traco-fino) solid var(--linha); margin: 0; }
+
+/* ---------- Sticker de texto e título-adesivo ---------- */
+.al-sticker-texto {
+  position: relative; display: inline-block; text-align: center;
+  padding: 14px 30px 20px; border-radius: var(--raio-caixa);
+  background: var(--calmaria); color: var(--creme-logo);
+  box-shadow: 0 0 0 var(--traco-sticker) var(--contorno-sticker);
+  transform: rotate(var(--giro, -6deg));
+}
+.al-sticker-texto--magenta { background: var(--rosa-fora-da-caixa); }
+.al-sticker-texto--rosa { background: var(--beleza-intimista); color: var(--calmaria); }
+.al-sticker-texto .al-estrela { position: absolute; top: -26px; right: -22px; width: 52px; color: var(--rosa-fora-da-caixa); }
+.al-sticker-texto--magenta .al-estrela { color: var(--calmaria); }
+.al-titulo-adesivo {
+  margin: 0; color: var(--calmaria);
+  -webkit-text-stroke: calc(var(--traco-sticker) * 2) var(--contorno-sticker);
+  paint-order: stroke fill;
+}
+
+/* ---------- Stickers e selos (imagens) ---------- */
+.al-sticker { display: block; height: auto; transform: rotate(var(--giro, 0deg)); }
+.al-selo { display: block; width: 220px; height: 220px; border-radius: 50%; transform: rotate(var(--giro, -8deg)); }
+.al-monograma { position: absolute; z-index: -1; height: auto; pointer-events: none; }
+
+/* ---------- Listras ---------- */
+.al-listras { --listra: 56px; background: repeating-linear-gradient(90deg, var(--rosa-fora-da-caixa) 0 var(--listra), var(--beleza-intimista) var(--listra) calc(var(--listra) * 2)); }
+.al-listras--vivo { background: repeating-linear-gradient(90deg, var(--rosa-fora-da-caixa) 0 var(--listra), var(--rosa-vivo) var(--listra) calc(var(--listra) * 2)); }
+.al-listras--raizes { background: repeating-linear-gradient(90deg, var(--raizes) 0 var(--listra), var(--rosa-fora-da-caixa) var(--listra) calc(var(--listra) * 2)); }
+.al-listras--creme { background: repeating-linear-gradient(90deg, var(--rosa-fora-da-caixa) 0 var(--listra), var(--auto-cuidado) var(--listra) calc(var(--listra) * 2)); }
+
+/* ---------- Painel ondulado e recorte ondulado ---------- */
+.al-painel-ondulado {
+  --onda: 30px;
+  --_c: radial-gradient(circle var(--onda) at 50% 50%, #000 97%, #0000 100%);
+  position: relative; padding: calc(var(--onda) * 2.6);
+  background: var(--calmaria); color: var(--auto-cuidado);
+  -webkit-mask:
+    var(--_c) 0 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) round no-repeat,
+    var(--_c) 0 100% / calc(var(--onda) * 2) calc(var(--onda) * 2) round no-repeat,
+    var(--_c) 0 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round,
+    var(--_c) 100% 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round,
+    linear-gradient(#000 0 0) 50% 50% / calc(100% - var(--onda) * 2) calc(100% - var(--onda) * 2) no-repeat;
+  mask:
+    var(--_c) 0 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) round no-repeat,
+    var(--_c) 0 100% / calc(var(--onda) * 2) calc(var(--onda) * 2) round no-repeat,
+    var(--_c) 0 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round,
+    var(--_c) 100% 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round,
+    linear-gradient(#000 0 0) 50% 50% / calc(100% - var(--onda) * 2) calc(100% - var(--onda) * 2) no-repeat;
+}
+.al-painel-ondulado--creme { background: var(--auto-cuidado); color: var(--calmaria); }
+.al-painel-ondulado--magenta { background: var(--rosa-fora-da-caixa); color: var(--auto-cuidado); }
+.al-recorte-ondulado {
+  --onda: 26px;
+  --_c: radial-gradient(circle var(--onda) at 50% 50%, #000 97%, #0000 100%);
+  -webkit-mask:
+    linear-gradient(#000 0 0) 0 0 / calc(100% - var(--onda)) 100% no-repeat,
+    var(--_c) 100% 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round;
+  mask:
+    linear-gradient(#000 0 0) 0 0 / calc(100% - var(--onda)) 100% no-repeat,
+    var(--_c) 100% 0 / calc(var(--onda) * 2) calc(var(--onda) * 2) no-repeat round;
+}
+
+/* ---------- Preço e combos ---------- */
+.al-caixa-preco {
+  display: inline-flex; flex-direction: column; gap: var(--espaco-1);
+  padding: var(--espaco-3) var(--espaco-6) var(--espaco-4) var(--espaco-4);
+  border: var(--traco-fino) solid var(--linha); border-radius: var(--raio-caixa); color: var(--tinta);
+}
+.al-preco { display: inline-flex; align-items: flex-start; gap: var(--espaco-1); white-space: nowrap; }
+.al-preco__moeda { font: 700 30px/1 var(--font-texto); margin-top: .35em; }
+.al-preco__centavos { align-self: flex-end; font: 700 34px/1 var(--font-texto); margin-bottom: .15em; }
+.al-combo {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--espaco-4);
+  padding: var(--espaco-4) var(--espaco-6);
+  border: var(--traco-fino) solid var(--linha); border-radius: var(--raio-caixa); color: var(--tinta);
+}
+.al-combo__valor { display: flex; flex-direction: column; align-items: flex-end; gap: var(--espaco-1); }
+.al-combo .preco { font-size: 120px; }
+
+/* ---------- Cartões ---------- */
+.al-cartao-servico {
+  position: relative; display: grid; grid-template-columns: 1fr 40%; align-items: center;
+  min-height: 250px; padding: var(--espaco-4) var(--espaco-6);
+  border-radius: var(--raio-cartao); background: var(--rosa-fora-da-caixa); color: var(--auto-cuidado);
+}
+.al-cartao-servico > div { display: flex; flex-direction: column; gap: var(--espaco-2); min-width: 0; }
+.al-cartao-servico__sticker { position: absolute; right: var(--espaco-4); bottom: 0; width: auto; height: 132%; }
+.al-cartao-servico--invertido { grid-template-columns: 40% 1fr; text-align: right; }
+.al-cartao-servico--invertido > div { grid-column: 2; align-items: flex-end; }
+.al-cartao-servico--invertido .al-cartao-servico__sticker { right: auto; left: var(--espaco-4); }
+.al-cartao-servico--rosa { background: var(--beleza-intimista); color: var(--calmaria); }
+.al-cartao-servico--calmaria { background: var(--calmaria); color: var(--auto-cuidado); }
+.al-cartao {
+  position: relative; padding: var(--espaco-8) var(--espaco-6);
+  border-radius: var(--raio-cartao); background: var(--cartao); color: var(--on-cartao);
+  box-shadow: var(--sombra-cartao); text-align: center;
+}
+
+/* ---------- Autora (post dividido) ---------- */
+.al-autora { display: flex; align-items: center; gap: var(--espaco-2); }
+.al-autora__foto { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; object-position: 50% 12%; background: var(--beleza-intimista); }
+.al-autora__nome { font: 700 28px/1.15 var(--font-texto); color: var(--tinta); }
+.al-autora__arroba { font: 400 24px/1.2 var(--font-texto); color: var(--tinta-suave); }
+
+/* ---------- Ajuda das prévias ---------- */
+.al-mostruario { display: flex; flex-wrap: wrap; gap: var(--espaco-4); align-items: center; padding: var(--espaco-6); }
+.al-amostra { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--espaco-2); padding: var(--espaco-6); border-radius: var(--raio-cartao); background: var(--fundo); color: var(--tinta); }
+.al-legenda { font: 500 20px/1.3 var(--font-texto); color: var(--tinta-suave); text-align: center; }

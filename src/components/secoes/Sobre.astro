@@ -1,0 +1,19 @@
+---
+import site from "../../conteudo/site.yaml";
+import Foto from "../Foto.astro";
+const s = site.sobre;
+---
+<section class="secao fundo-calmaria">
+  <div class="conteudo sobre">
+    <Foto arquivo={s.foto} legenda={s.foto_legenda} />
+    <div class="sobre-texto">
+      <p class="manuscrita">{s.anotacao}</p>
+      <h2 class="italico">{s.nome}</h2>
+      <span class="rotulo">{s.rotulo}</span>
+      {s.historia.map((paragrafo) => <p class="texto-grande">{paragrafo}</p>)}
+      <div class="etiquetas">
+        {s.valores.map((v) => <span class="etiqueta contorno">{v}</span>)}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+import { marcar } from "../../lib/util.js";
+const s = site.servicos;
+---
+<section class="secao fundo-creme" id="servicos">
+  <div class="conteudo">
+    <Titulo anotacao={s.anotacao} pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <p class="texto-grande">{s.texto}</p>
+    <div class="servicos">
+      {s.lista.map((servico) => (
+        <article class={`cartao-servico cor-${servico.cor}`}>
+          <img src={`/imagens/stickers/${servico.sticker}`} alt="" />
+          <h3>{servico.nome}</h3>
+          <p>{servico.descricao}</p>
+        </article>
+      ))}
+    </div>
+    {s.combo && (
+      <div class="cupom">
+        <img class="estrela" src="/imagens/marca/estrela-magenta.svg" alt="" />
+        <p set:html={marcar(s.combo)} />
+      </div>
+    )}
+  </div>
+</section>

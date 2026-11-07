@@ -1,0 +1,29 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+import BotaoWhatsapp from "../BotaoWhatsapp.astro";
+const { final: s, contato } = site;
+---
+<section class="final fundo-listras">
+  <div class="painel-ondulado">
+    <img class="selo" src="/imagens/marca/selo-cuidado-em-casa.png" alt="Selo cuidado em casa" />
+    <Titulo pesado={s.titulo_pesado} italico={s.titulo_italico} centro />
+    <p class="texto-grande">{s.texto}</p>
+    <BotaoWhatsapp />
+    <span>{contato.whatsapp_escrito}</span>
+  </div>
+</section>
+
+<footer class="rodape fundo-calmaria">
+  <div class="conteudo">
+    <img src="/imagens/marca/logo-ana-livia-creme.svg" alt="Ana Lívia Beauty" />
+    <p>
+      {contato.regiao} · {contato.dias}<br />
+      WhatsApp <BotaoWhatsapp classe="">{contato.whatsapp_escrito}</BotaoWhatsapp> ·
+      Instagram <a href={`https://www.instagram.com/${contato.instagram}/`} target="_blank" rel="noopener">@{contato.instagram}</a><br />
+      © {new Date().getFullYear()} Ana Lívia Beauty
+    </p>
+  </div>
+</footer>
+
+<BotaoWhatsapp classe="botao botao-cheio whatsapp-flutuante">Agendar</BotaoWhatsapp>

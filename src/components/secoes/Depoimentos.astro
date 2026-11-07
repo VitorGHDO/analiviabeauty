@@ -1,0 +1,19 @@
+---
+import site from "../../conteudo/site.yaml";
+import Titulo from "../Titulo.astro";
+const s = site.depoimentos;
+---
+<section class="secao fundo-creme">
+  <div class="conteudo">
+    <Titulo pesado={s.titulo_pesado} italico={s.titulo_italico} />
+    <div class="grade depoimentos">
+      {s.lista.map((d) => (
+        <figure class="cartao-claro depoimento">
+          <span class="aspas" aria-hidden="true">“</span>
+          <blockquote>{d.texto}</blockquote>
+          <figcaption>{d.nome}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+---
+// Título da marca: uma linha pesada + uma linha em itálico colorido.
+const { pesado, italico, anotacao, centro = false } = Astro.props;
+---
+{anotacao && <p class="manuscrita">{anotacao}</p>}
+<h2 class:list={["titulo-misto", { centro }]}>
+  <span class="pesada">{pesado}</span>
+  <span class="italico">{italico}</span>
+</h2>

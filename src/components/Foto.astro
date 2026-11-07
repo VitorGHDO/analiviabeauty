@@ -1,0 +1,14 @@
+---
+// Mostra a foto se ela já estiver em public/imagens/fotos.
+// Se ainda não estiver, mostra o espaço tracejado com a legenda.
+import { fotoExiste } from "../lib/util.js";
+const { arquivo, legenda } = Astro.props;
+const tem = fotoExiste(arquivo);
+---
+<figure class:list={["foto", { "com-foto": tem }]}>
+  {tem ? (
+    <img src={`/imagens/fotos/${arquivo}`} alt={legenda.replace(/^Foto:\s*/, "")} loading="lazy" />
+  ) : (
+    <figcaption>{legenda}</figcaption>
+  )}
+</figure>
