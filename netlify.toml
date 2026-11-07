@@ -1,0 +1,7 @@
+# Configuração do Netlify (não precisa mexer)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
